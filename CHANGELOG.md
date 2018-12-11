@@ -1,5 +1,16 @@
 # Change Log
 
+## [v0.1.1](https://github.com/nathanurwin/test-bumpversion/tree/v0.1.1) (2018-12-11)
+[Full Changelog](https://github.com/nathanurwin/test-bumpversion/compare/v0.1.0...v0.1.1)
+
+**Implemented enhancements:**
+
+- Add an initial release [\#3](https://github.com/NathanUrwin/test-bumpversion/issues/3)
+
+**Fixed bugs:**
+
+- Add first working version [\#4](https://github.com/NathanUrwin/test-bumpversion/issues/4)
+
 ## [v0.1.0](https://github.com/nathanurwin/test-bumpversion/tree/v0.1.0) (2018-12-11)
 **Fixed bugs:**
 
