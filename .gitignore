@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/windows,macos,linux,git,python
-# Edit at https://www.gitignore.io/?templates=windows,macos,linux,git,python
+# Created by https://www.gitignore.io/api/windows,macos,linux,git,python,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=windows,macos,linux,git,python,visualstudiocode
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -180,6 +180,13 @@ dmypy.json
 ### Python Patch ###
 .venv/
 
+### VisualStudioCode ###
+.vscode/*
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -205,4 +212,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/windows,macos,linux,git,python
+# End of https://www.gitignore.io/api/windows,macos,linux,git,python,visualstudiocode

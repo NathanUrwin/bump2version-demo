@@ -60,6 +60,7 @@ def revert_last(context):
     revert_last task.
     """
 
+    # FIXME: make sure last 2 commits are 'Generate changelog:' and 'Bump version:'
     latest_tag = context.run("git describe --abbrev=0 --tags", hide=True).stdout.strip()
     prompt = ">>> Are you sure?? You're about to run these commands:"
     git_reset_hard = "git reset --hard HEAD~2"
