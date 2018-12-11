@@ -6,33 +6,17 @@
 [![Build Status](https://img.shields.io/badge/build-pending-lightgrey.svg?longCache=true)](https://www.appveyor.com)
 [![Build Coverage](https://img.shields.io/badge/coverage-0%25-lightgrey.svg?longCache=true)](https://codecov.io)
 
->  
-
- 
-
 _**Note:** This project was initially created by [cookiecutter-git](https://github.com/NathanUrwin/cookiecutter-git)!_ :cookie:
 
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Development](#development)
   - [Future](#future)
   - [History](#history)
   - [Community](#community)
 - [Credits](#credits)
 - [License](#license)
-
-## Features
-
-## Requirements
-
-## Installation
-
-## Usage
 
 ## Development
 
