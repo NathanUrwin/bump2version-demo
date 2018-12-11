@@ -60,7 +60,7 @@ def revert_last(context):
     revert_last task.
     """
 
-    latest_tag = context.run("git describe --abbrev=0 --tags").stdout
+    latest_tag = context.run("git describe --abbrev=0 --tags", hide=True).stdout.strip()
     prompt = ">>> Are you sure?? You're about to run these commands:"
     git_reset_hard = "git reset --hard HEAD~2"
     git_tag_delete = "git tag --delete {}".format(latest_tag)
