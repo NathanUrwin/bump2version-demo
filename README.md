@@ -1,4 +1,4 @@
-# test-bumpversion
+# bump2version-demo
 
 [![Tagged Release](https://img.shields.io/badge/release-v0.1.1-blue.svg?longCache=true)](CHANGELOG.md)
 [![Development Status](https://img.shields.io/badge/status-planning-lightgrey.svg?longCache=true)](ROADMAP.md)

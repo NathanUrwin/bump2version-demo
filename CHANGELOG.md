@@ -1,21 +1,21 @@
 # Change Log
 
-## [v0.1.1](https://github.com/nathanurwin/test-bumpversion/tree/v0.1.1) (2018-12-11)
-[Full Changelog](https://github.com/nathanurwin/test-bumpversion/compare/v0.1.0...v0.1.1)
+## [v0.1.1](https://github.com/nathanurwin/bump2version-demo/tree/v0.1.1) (2018-12-11)
+[Full Changelog](https://github.com/nathanurwin/bump2version-demo/compare/v0.1.0...v0.1.1)
 
 **Implemented enhancements:**
 
-- Add an initial release [\#3](https://github.com/NathanUrwin/test-bumpversion/issues/3)
+- Add an initial release [\#3](https://github.com/NathanUrwin/bump2version-demo/issues/3)
 
 **Fixed bugs:**
 
-- Add first working version [\#4](https://github.com/NathanUrwin/test-bumpversion/issues/4)
+- Add first working version [\#4](https://github.com/NathanUrwin/bump2version-demo/issues/4)
 
-## [v0.1.0](https://github.com/nathanurwin/test-bumpversion/tree/v0.1.0) (2018-12-11)
+## [v0.1.0](https://github.com/nathanurwin/bump2version-demo/tree/v0.1.0) (2018-12-11)
 **Fixed bugs:**
 
-- Remove empty README.md sections [\#2](https://github.com/NathanUrwin/test-bumpversion/issues/2)
-- Remove empty dirs [\#1](https://github.com/NathanUrwin/test-bumpversion/issues/1)
+- Remove empty README.md sections [\#2](https://github.com/NathanUrwin/bump2version-demo/issues/2)
+- Remove empty dirs [\#1](https://github.com/NathanUrwin/bump2version-demo/issues/1)
 
 
 
