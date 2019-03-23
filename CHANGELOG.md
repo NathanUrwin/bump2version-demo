@@ -1,5 +1,19 @@
 # Change Log
 
+## [v0.1.2](https://github.com/nathanurwin/bump2version-demo/tree/v0.1.2) (2019-03-23)
+[Full Changelog](https://github.com/nathanurwin/bump2version-demo/compare/v0.1.1...v0.1.2)
+
+**Implemented enhancements:**
+
+- Rename revert-last task to revert [\#7](https://github.com/NathanUrwin/bump2version-demo/issues/7)
+- Rename new-release task to release [\#6](https://github.com/NathanUrwin/bump2version-demo/issues/6)
+
+**Fixed bugs:**
+
+- Fix command not found after committing [\#9](https://github.com/NathanUrwin/bump2version-demo/issues/9)
+- Fix tags not pushed to remote [\#8](https://github.com/NathanUrwin/bump2version-demo/issues/8)
+- Missing features in README.md [\#5](https://github.com/NathanUrwin/bump2version-demo/issues/5)
+
 ## [v0.1.1](https://github.com/nathanurwin/bump2version-demo/tree/v0.1.1) (2018-12-11)
 [Full Changelog](https://github.com/nathanurwin/bump2version-demo/compare/v0.1.0...v0.1.1)
 
