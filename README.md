@@ -8,6 +8,14 @@
 
 _**Note:** This project was initially created by [cookiecutter-git](https://github.com/NathanUrwin/cookiecutter-git)!_ :cookie:
 
+## Features
+
+- format-python   Formats the python source files using the uncompromising black.
+- lint-markdown   Lint markdown files.
+- lint-python     Lint python files using flake8 and pylint.
+- new-release     new_release task.
+- revert-last     revert_last task.
+
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
