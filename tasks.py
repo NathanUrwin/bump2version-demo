@@ -55,9 +55,9 @@ def lint_python(context):
 
 
 @task
-def new_release(context, version_part, changelog=False):
+def release(context, version_part, changelog=False):
     """
-    new_release task.
+    release task.
 
     Args:
         context (invoke.context.Context):
@@ -66,8 +66,20 @@ def new_release(context, version_part, changelog=False):
     """
 
     repo_dirpath = os.path.dirname(os.path.realpath(__file__))
-    if changelog and not os.environ.get("GITHUB_USERNAME", None):
-        raise OSError("Environment variable 'GITHUB_USERNAME' not set")
+
+    if changelog:
+        if not os.environ.get("GITHUB_USERNAME", None):
+            raise OSError("Environment variable 'GITHUB_USERNAME' not set")
+
+        changelog_config = os.path.join(
+            repo_dirpath, ".github_changelog_generator"
+        )
+        if not os.path.exists(changelog_config):
+            changelog_error = "Github Changelog Generator config not found: {}"
+            raise OSError(changelog_error.format(changelog_config))
+
+        # this throws 'command not found' error if needed
+        context.run("github_changelog_generator --help")
 
     version_parts = ["major", "minor", "patch"]
     if version_part.lower() not in version_parts:
@@ -76,13 +88,6 @@ def new_release(context, version_part, changelog=False):
             version_part_error.format(version_parts, version_part)
         )
 
-    changelog_config = os.path.join(
-        repo_dirpath, ".github_changelog_generator"
-    )
-    if changelog and not os.path.exists(changelog_config):
-        changelog_error = "Github Changelog Generator config not found: {}"
-        raise OSError(changelog_error.format(changelog_config))
-
     bumpversion_config = os.path.join(repo_dirpath, ".bumpversion.cfg")
     if not os.path.exists(bumpversion_config):
         bumpversion_error = "Bumpversion config not found: {}"
@@ -90,6 +95,7 @@ def new_release(context, version_part, changelog=False):
 
     context.run("bump2version {}".format(version_part))
     context.run("git push")
+    context.run("git push --tags")
 
     if changelog:
         config = configparser.ConfigParser()
@@ -104,9 +110,9 @@ def new_release(context, version_part, changelog=False):
 
 
 @task
-def revert_last(context, changelog=False):
+def revert(context, changelog=False):
     """
-    revert_last task.
+    revert task.
 
     Args:
         context (invoke.context.Context):
